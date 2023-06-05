@@ -1,0 +1,23 @@
+
+
+<h1>{{name}}</h1>
+
+<dl>
+
+  <td>Nombre:</td>
+  <dd>{{name}}</dd>
+
+  <td>Año creación:</td>
+  <dd>{{anio}}</dd>
+
+  <td>Método:</td>
+  <dd> {{ getHeroeDescription() }} </dd>
+
+  <td>Capitalizado:</td>
+  <dd> {{ capitalizedName }} </dd>
+
+</dl>
+
+<button (click)="changeLenguajeProgramacion()" class="btn btn-primary mx-2">Cambiar Nombre</button>
+
+<button (click)="changeAnio()" class="btn btn-success">Cambiar Año</button >
