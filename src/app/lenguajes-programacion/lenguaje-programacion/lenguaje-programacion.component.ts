@@ -7,7 +7,8 @@ import { Component } from '@angular/core';
 })
 export class LenguajeProgramacionComponent {
 
-  public name: string = 'flutter';
+
+  public name: string = 'Flutter';
   public anio: number = 2017;
 
   get capitalizedName():string{
@@ -22,6 +23,10 @@ export class LenguajeProgramacionComponent {
   }
   changeAnio():void{
     this.anio = 2016
+  }
+  resetForm() {
+    this.anio = 2017
+    this.name = "Flutter"
   }
 
 }

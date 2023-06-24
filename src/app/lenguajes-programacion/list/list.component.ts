@@ -7,4 +7,19 @@ import { Component } from '@angular/core';
 })
 export class ListComponent {
 
+  public lenguajeProgramacionNames: string[] = [
+    'Dart',
+    'c#',
+    'Python',
+    'Flutter',
+    'NestJS',
+    'JavaScript',
+  ];
+  public deletedLenguaje?: string;
+
+  removeLastHero():void{
+    this.deletedLenguaje = this.lenguajeProgramacionNames.pop();
+    // console.log({deletedLenguaje});
+  }
+
 }

@@ -18,6 +18,22 @@
 
 </dl>
 
-<button (click)="changeLenguajeProgramacion()" class="btn btn-primary mx-2">Cambiar Nombre</button>
+<button
+  *ngIf="name !== 'Angular'"
+  (click)="changeLenguajeProgramacion()"
+  class="btn btn-primary mx-2">
+  Cambiar Nombre
+</button>
 
-<button (click)="changeAnio()" class="btn btn-success">Cambiar Año</button >
+<button
+  *ngIf="anio !== 2016"
+  (click)="changeAnio()"
+  class="btn btn-success">
+  Cambiar Año
+</button >
+
+<button
+  (click)="resetForm()"
+  class="btn btn-warning mx-2">
+  Some Year
+</button>
