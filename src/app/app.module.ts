@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 // import { ListComponent } from './lenguajes-programacion/list/list.component';
 import { CounterModule } from './counter/counter.module';
 import { LenguajesProgramacionModule } from './lenguajes-programacion/lenguajesProgramacion.module';
+import { DbzModule } from './dbz/dbz.module';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { LenguajesProgramacionModule } from './lenguajes-programacion/lenguajesP
     BrowserModule,
     CounterModule,
     LenguajesProgramacionModule,
+    DbzModule
   ],
   providers: [],
   bootstrap: [AppComponent]
